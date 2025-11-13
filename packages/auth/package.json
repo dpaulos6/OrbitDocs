@@ -1,0 +1,16 @@
+{
+	"name": "@repo/auth",
+	"version": "0.0.0",
+	"private": true,
+	"exports": {
+		".": "./src/auth.ts",
+		"./client": "./src/auth-client.ts"
+	},
+	"scripts": {
+		"auth:generate": "better-auth generate"
+	},
+	"dependencies": {
+		"@repo/db": "workspace:*",
+		"better-auth": "^1.3.34"
+	}
+}
